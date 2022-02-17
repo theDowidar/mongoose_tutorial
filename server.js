@@ -6,13 +6,13 @@ const app = express();
 
 app.use(express.json());
 
-const username = "Username";
-const password = "";
-const cluster = "";
+const username = "<Username>";
+const password = "<Password>";
+const cluster = "<Cluster>";
 const dbname = "myFirstDatabase";
 
 mongoose.connect(
-  `mongodb+srv://Username:<Password>@<Cluster>.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`, 
+  `mongodb+srv://<Username>:<Password>@<Cluster>.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`, 
   {
     useNewUrlParser: true,
     useUnifiedTopology: true
